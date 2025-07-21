@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to SupaMenu</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 600px;
+            background-color: #1a1a1a;
+            margin: 0 auto;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(255, 165, 0, 0.2);
+        }
+        h1 {
+            color: #FFA500;
+        }
+        p, li {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        a.button {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 12px 24px;
+            background-color: #FFA500;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            color: #bbbbbb;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🎉 Welcome to SupaMenu!</h1>
+    <p>Hey there Restaurant Owner 👋,</p>
+    <p>We’re thrilled to have you join the SupaMenu family – where managing your restaurant’s menu is super easy, stylish, and digital! 😎🔥</p>
+
+    <p>Here’s what you can do next:</p>
+    <ul>
+        <li>🧾 Set up your restaurant profile</li>
+        <li>🍲 Start adding your dishes and menus</li>
+        <li>📲 Share your menu via QR code or link</li>
+    </ul>
+
+    <p>Let’s get started and take your service to the next level 🚀</p>
+    <a class="button" th:href="${dashboardUrl}">Go to My Dashboard</a>
+
+    <p class="footer">Need help? Just reply to this email or hit up our support team. We're here for you! 🙌</p>
+</div>
+</body>
+</html>

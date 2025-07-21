@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Restaurant is Approved!</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 600px;
+            background-color: #1a1a1a;
+            margin: 0 auto;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(255, 165, 0, 0.3);
+        }
+        h1 {
+            color: #FFA500;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        a.button {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 12px 24px;
+            background-color: #FFA500;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            color: #bbbbbb;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>✅ Your Restaurant is Now Approved!</h1>
+    <p>Hello <strong th:text="${restaurantName}">[Restaurant Name]</strong>,</p>
+
+    <p>Great news! 🎉 Your registration on <strong>SupaMenu</strong> has been reviewed and officially approved.</p>
+
+    <p>You're now all set to start building your digital menu, managing your dishes, and welcoming new customers to your digital dining space. 😋📲</p>
+
+    <p>Click below to access your dashboard and start customizing your restaurant profile:</p>
+    <a class="button" th:href="${dashboardUrl}">Go to My Dashboard</a>
+
+    <p>If you have any questions or need help, feel free to reach out anytime.</p>
+
+    <p class="footer">Welcome to the future of restaurant management – we're happy to have you onboard! 🚀</p>
+</div>
+</body>
+</html>
